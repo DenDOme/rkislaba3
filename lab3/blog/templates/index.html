@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    {% for b in blog %}
+    <div class="posts">
+        <a href="{{ b.get_absolute_url }}">{{ b.name }}</a>
+        {{ b.post_date }}
+        <a href="{% url 'blog_author' b.author.pk %}">{{ b.author }}</a>
+    </div>
+    {% endfor %}
+{% endblock %}

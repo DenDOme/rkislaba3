@@ -1,0 +1,25 @@
+body{
+    background-color:gray;
+}
+.links{
+    display:flex;
+    gap:25px;
+}
+.links a{
+    text-decoration:none;
+    font-size:30px;
+    color:black;
+}
+.links a:hover{
+    color:blue;
+}
+.posts{
+    display:flex;
+    gap:15px;
+}
+.posts a{
+    font-size:20px;
+    text-decoration:none;
+    color:yellow;
+
+}
